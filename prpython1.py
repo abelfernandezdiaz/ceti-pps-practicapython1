@@ -1,6 +1,6 @@
-numAlumnos = 5;
+numAlumnos = 5; #Número de alumnos a meter
 contador = 0;
-edadIntro = 0;
+edadIntro = 0; #El número que se ha introducido en cada iteración
 edadMax = 0;
 edadMin = 0;
 edadesPares = 0;
@@ -18,6 +18,7 @@ while contador < numAlumnos:
       edadMax = edadIntro
     if(edadMin > edadIntro or contador == 1):
       edadMin = edadIntro
+    #El ... or contador == 1 es para comprobar si es el primer número que se introduce
     if edadIntro % 2 == 0:
       edadesPares += 1
     else:
@@ -28,6 +29,7 @@ while contador < numAlumnos:
     while cuentaPrimo > 1:
       if edadIntro % cuentaPrimo == 0:
         esPrimo = False
+        break
       cuentaPrimo -= 1
     if (esPrimo == True and mayorPrimo < edadIntro):
       mayorPrimo = edadIntro
